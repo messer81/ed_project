@@ -6,6 +6,10 @@ import { ProductCardTailwind } from "./components/ProductCardTailwind";
 import { ProductCardMUI } from "./components/ProductCardMUI";
 import { SimpleModalMUI } from "./components/SimpleModalMUI";
 import { Counter } from "./components/Counter";
+import {SimpleModalTailwind} from "./components/SimpleModalTailwind.tsx";
+import {SimpleModalHeadlessUI} from "./components/SimpleModalHeadlessUI";
+import {SimpleModalJoy} from "./components/SimpleModalJoy";
+import {AnimatedModal} from "./components/CustomAnimatedModal.tsx";
 
 export default function App() {
   return (
@@ -30,6 +34,23 @@ export default function App() {
         <div className="min-h-screen flex items-center justify-center p-10 bg-gray-100">
         <Counter />
       </div>
+
+          <div className="min-h-screen flex items-center justify-center p-10">
+              <SimpleModalTailwind />
+          </div>
+
+          <div className="min-h-screen flex items-center justify-center p-10">
+              <SimpleModalHeadlessUI />
+          </div>
+
+          <div className="min-h-screen flex items-center justify-center p-10">
+              <SimpleModalJoy />
+          </div>
+
+          <div className="min-h-screen flex items-center justify-center p-10">
+              <AnimatedModal />
+          </div>
+
 
       </div>
 
